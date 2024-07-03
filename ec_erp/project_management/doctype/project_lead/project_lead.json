@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 12:34:41.202593",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_mw6b",
+  "client_name",
+  "pre_bid_date",
+  "project_cost",
+  "role_of_firm",
+  "location",
+  "description",
+  "column_break_jv8h",
+  "category",
+  "stage",
+  "publication_date",
+  "submission_date",
+  "expected_bid_cost",
+  "project_name",
+  "projname",
+  "firm_share",
+  "jv_partner",
+  "consultancy_fees",
+  "tab_break_xxuv",
+  "bd_remarks",
+  "director_remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_mw6b",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pre_bid_date",
+   "fieldtype": "Date",
+   "label": "Pre-Bid / Proposal Date (expected)"
+  },
+  {
+   "default": "NA",
+   "depends_on": "eval:doc.role_of_firm != \"Sole\";",
+   "fieldname": "jv_partner",
+   "fieldtype": "Data",
+   "label": "JV Partner"
+  },
+  {
+   "fieldname": "column_break_jv8h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stage",
+   "fieldtype": "Select",
+   "label": "Stage",
+   "options": "EOI\nRFP\nProposal"
+  },
+  {
+   "fieldname": "submission_date",
+   "fieldtype": "Date",
+   "label": "Submission Date"
+  },
+  {
+   "fieldname": "tab_break_xxuv",
+   "fieldtype": "Tab Break",
+   "label": "Remarks"
+  },
+  {
+   "default": " NA",
+   "fieldname": "bd_remarks",
+   "fieldtype": "Text Editor",
+   "label": "BD Remarks"
+  },
+  {
+   "default": " NA",
+   "fieldname": "director_remarks",
+   "fieldtype": "Text Editor",
+   "label": "Director Remarks"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "EC01-LUP\nEC02-WS\nEC03-SD\nEC04-WH/SD\nEC05-EDHS\nEC06-EPA\nEC07-URBAN\nEC08-CBD\nEC09-ELECT\nEC10-DAM/HPP\nEC11-IRRI\nEC12-BUILD\nEC13-INFRA\nEC14-ITS"
+  },
+  {
+   "fieldname": "expected_bid_cost",
+   "fieldtype": "Currency",
+   "label": "Expected Bid Cost"
+  },
+  {
+   "default": "NA",
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "default": "Test",
+   "fieldname": "client_name",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Client"
+  },
+  {
+   "fieldname": "project_cost",
+   "fieldtype": "Currency",
+   "label": "Cost of Project"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "projname",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "projname"
+  },
+  {
+   "fieldname": "publication_date",
+   "fieldtype": "Date",
+   "label": "Publication Date"
+  },
+  {
+   "default": "Sole",
+   "fieldname": "role_of_firm",
+   "fieldtype": "Select",
+   "label": "Role of Firm",
+   "options": "Sole\nJoint Venture Partner\nAssociates/Sub-Consultants"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.role_of_firm != \"Sole\";",
+   "fieldname": "firm_share",
+   "fieldtype": "Percent",
+   "label": "Firm Share"
+  },
+  {
+   "default": "NA",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "consultancy_fees",
+   "fieldtype": "Currency",
+   "label": "Consultancy Fees"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "links": [],
+ "modified": "2024-07-02 15:39:37.810001",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "Project Lead",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

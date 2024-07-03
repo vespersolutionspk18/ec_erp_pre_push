@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:deliverable_name",
+ "creation": "2024-06-24 17:33:20.730216",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_p7li",
+  "deliverable_name",
+  "start_date",
+  "deliverable_status",
+  "description",
+  "column_break_solb",
+  "project",
+  "end_date",
+  "deliverable_cost",
+  "tasks_tab",
+  "tasks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_p7li",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "deliverable_name",
+   "fieldtype": "Data",
+   "label": "Deliverable Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "column_break_solb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "search_index": 1
+  },
+  {
+   "fieldname": "deliverable_cost",
+   "fieldtype": "Currency",
+   "label": "Deliverable Cost"
+  },
+  {
+   "fieldname": "tasks_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tasks"
+  },
+  {
+   "fieldname": "tasks",
+   "fieldtype": "Table",
+   "options": "Task"
+  },
+  {
+   "fieldname": "deliverable_status",
+   "fieldtype": "Select",
+   "label": "Deliverable Status",
+   "options": "In Progress\nIn Review\nSubmitted\nRevision\nEvaluation\nApproved\nRejected"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "links": [],
+ "modified": "2024-06-25 11:47:09.296888",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "Deliverable",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

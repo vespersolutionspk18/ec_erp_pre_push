@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-02 14:52:30.588957",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ooqc",
+  "name1",
+  "designation",
+  "email",
+  "phone_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ooqc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Name",
+   "search_index": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Phone Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-02 14:53:49.398091",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "ClientChild",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

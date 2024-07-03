@@ -1,0 +1,207 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:savename",
+ "creation": "2024-06-20 18:47:46.366509",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_lawf",
+  "project_name",
+  "start_date",
+  "end_date",
+  "jv_status",
+  "savename",
+  "description",
+  "column_break_vrtg",
+  "status",
+  "client_name",
+  "category",
+  "jv_with",
+  "attachments_tab",
+  "contract_agreement",
+  "rfp",
+  "financial_proposal",
+  "column_break_ruxw",
+  "technical_proposal",
+  "pre_qualification_documents",
+  "completion_certificate",
+  "remarks_tab",
+  "bd_team_remarks",
+  "owner_remarks",
+  "finances_tab",
+  "project_cost",
+  "column_break_huyx",
+  "bid_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_lawf",
+   "fieldtype": "Section Break",
+   "label": "Project Outlook"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "In-Progress\nSubmitted\nRevision\nObservations\nCompleted"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "EC01-LUP\nEC02-WS\nEC03-SD\nEC04-WH/SD\nEC05-EDHS\nEC06-EPA\nEC07-URBAN\nEC08-CBD\nEC09-ELECT\nEC10-DAM/HPP\nEC11-IRRI\nEC12-BUILD\nEC13-INFRA\nEC14-ITS"
+  },
+  {
+   "fieldname": "attachments_tab",
+   "fieldtype": "Tab Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "contract_agreement",
+   "fieldtype": "Attach",
+   "label": "Contract Agreement"
+  },
+  {
+   "fieldname": "rfp",
+   "fieldtype": "Attach",
+   "label": "RFP"
+  },
+  {
+   "fieldname": "financial_proposal",
+   "fieldtype": "Attach",
+   "label": "Financial Proposal"
+  },
+  {
+   "fieldname": "technical_proposal",
+   "fieldtype": "Attach",
+   "label": "Technical Proposal"
+  },
+  {
+   "fieldname": "pre_qualification_documents",
+   "fieldtype": "Attach",
+   "label": "Pre-Qualification Documents"
+  },
+  {
+   "fieldname": "completion_certificate",
+   "fieldtype": "Attach",
+   "label": "Completion Certificate"
+  },
+  {
+   "fieldname": "column_break_vrtg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ruxw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "jv_status",
+   "fieldtype": "Check",
+   "label": "Joint Venture?"
+  },
+  {
+   "depends_on": "eval:doc.jv_status == 1;",
+   "fieldname": "jv_with",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "JV With"
+  },
+  {
+   "fieldname": "remarks_tab",
+   "fieldtype": "Tab Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "bd_team_remarks",
+   "fieldtype": "Long Text",
+   "label": "BD Team Remarks"
+  },
+  {
+   "fieldname": "owner_remarks",
+   "fieldtype": "Long Text",
+   "label": "Director Remarks"
+  },
+  {
+   "fieldname": "savename",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Savename",
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "finances_tab",
+   "fieldtype": "Tab Break",
+   "label": "Finances"
+  },
+  {
+   "fieldname": "project_cost",
+   "fieldtype": "Currency",
+   "label": "Project Cost"
+  },
+  {
+   "fieldname": "column_break_huyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bid_cost",
+   "fieldtype": "Data",
+   "label": "Bid Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-24 13:03:01.554399",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "Project",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

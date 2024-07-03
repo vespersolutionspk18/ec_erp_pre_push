@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 17:43:37.121701",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task_name",
+  "prepared_by",
+  "sign_1",
+  "checked_by",
+  "sign_2",
+  "authorised_by",
+  "sign_3",
+  "method_of_issue"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task Name"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prepared By"
+  },
+  {
+   "fieldname": "sign_1",
+   "fieldtype": "Signature",
+   "in_list_view": 1,
+   "label": "Signature"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Checked By"
+  },
+  {
+   "fieldname": "sign_2",
+   "fieldtype": "Signature",
+   "in_list_view": 1,
+   "label": "Signature"
+  },
+  {
+   "fieldname": "authorised_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Authorised By"
+  },
+  {
+   "fieldname": "sign_3",
+   "fieldtype": "Signature",
+   "in_list_view": 1,
+   "label": "Signature"
+  },
+  {
+   "fieldname": "method_of_issue",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Method of Issue",
+   "options": "Email\nPrint\nCall"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-24 17:46:17.140060",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "Task",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
